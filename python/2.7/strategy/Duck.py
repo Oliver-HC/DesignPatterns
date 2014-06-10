@@ -26,3 +26,21 @@ class Duck(object):
 
 	def swim(self):
 		print "All ducks float, even decoys!"
+
+class MallardDuck(Duck):
+	def __init__(self):
+		super(MallardDuck, self).__init__()
+		self.flyBehavior = FlyWithWings()
+		self.quackBehavior = Quack()
+
+	def display(self):
+		print "I'm a real Mallard duck"
+
+class ModelDuck(Duck):
+    def __init__(self):
+        super(ModelDuck, self).__init__()
+        self.flyBehavior = FlyNoWay()
+        self.quackBehavior = Quack()
+
+    def display(self):
+        print "I'm ModelDuck"

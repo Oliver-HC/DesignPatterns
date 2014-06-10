@@ -6,16 +6,7 @@ use strategy;
 include 'FlyBehavior.php';
 include 'QuackBehavior.php';
 
-include 'FlyWithWings.php';
-include 'FlyNoWay.php';
-include 'FlyRocketPowered.php';
-include 'Quack.php';
-include 'MuteQuack.php';
-include 'Squeak.php';
-
 include 'Duck.php';
-include 'MallardDuck.php';
-include 'ModelDuck.php';
 
 MiniDuckSimulator::run();
 

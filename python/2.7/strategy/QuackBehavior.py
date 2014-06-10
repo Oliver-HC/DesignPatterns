@@ -7,3 +7,15 @@ class QuackBehavior:
 	@abstractmethod
 	def quack(self):
 		pass
+
+class Quack(QuackBehavior):
+    def quack(self):
+        print "Quack! Quack!"
+
+class MuteQuack(QuackBehavior):
+    def quack(self):
+        print "... ..."
+
+class Squeak(QuackBehavior):
+    def quack(self):
+        print "Squack! Squack!"

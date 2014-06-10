@@ -30,4 +30,28 @@ abstract class Duck {
         echo "All ducks float, even decoys!";
     }
 }
+
+class MallardDuck extends Duck {
+    public function __construct() {
+        parent::__construct();
+        $this->flyBehavior = new FlyWithWings();
+        $this->quackBehavior = new Quack();
+    }
+
+    public function display() {
+        echo "I'm a real Mallard duck";
+    }
+}
+
+class ModelDuck extends Duck {
+    public function __construct() {
+        parent::__construct();
+        $this->flyBehavior = new FlyNoWay();
+        $this->quackBehavior = new Quack();
+    }
+
+    public function display() {
+        echo "I'm a model duck";
+    }
+}
 ?>
