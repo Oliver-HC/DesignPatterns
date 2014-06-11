@@ -7,19 +7,19 @@ interface QuackBehavior {
 
 class Quack implements QuackBehavior {
     public function quack() {
-        echo "Quack!! Quack!!";
+        echo "Quack!! Quack!!\n";
     }
 }
 
 class MuteQuack implements QuackBehavior {
     public function quack() {
-        echo "... ....";
+        echo "... ....\n";
     }
 }
 
 class Squeak implements QuackBehavior {
     public function quack() {
-        echo "Squeak!! Squeak!!";
+        echo "Squeak!! Squeak!!\n";
     }
 }
 ?>

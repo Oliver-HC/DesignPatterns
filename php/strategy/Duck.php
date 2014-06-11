@@ -27,7 +27,7 @@ abstract class Duck {
     }
 
     public function swim() {
-        echo "All ducks float, even decoys!";
+        echo "All ducks float, even decoys!\n";
     }
 }
 
@@ -39,7 +39,7 @@ class MallardDuck extends Duck {
     }
 
     public function display() {
-        echo "I'm a real Mallard duck";
+        echo "I'm a real Mallard duck\n";
     }
 }
 
@@ -51,7 +51,7 @@ class ModelDuck extends Duck {
     }
 
     public function display() {
-        echo "I'm a model duck";
+        echo "I'm a model duck\n";
     }
 }
 ?>
