@@ -9,5 +9,5 @@ mallard.performQuack();
 
 var modelDuck = new ModelDuck();
 modelDuck.performFly();
-modelDuck.setFlyBehaivor(new FlyRocketPowered());
+modelDuck.setFlyBehavior(new FlyRocketPowered());
 modelDuck.performFly();
