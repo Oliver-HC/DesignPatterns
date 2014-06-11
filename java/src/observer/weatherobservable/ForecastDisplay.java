@@ -3,20 +3,24 @@ package observer.weatherobservable;
 import java.util.*;
 
 public class ForecastDisplay implements Observer, DisplayElement {
-	private float currentPressure = 29.92f;  
+	Observable observable;
+	private float currentPressure = 29.92f;
 	private float lastPressure;
-	private WeatherData weatherData;
 
-	public ForecastDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
-		weatherData.registerObserver(this);
+	public ForecastDisplay(Observable observable) {
+		this.observable = observable;
+		observable.addObserver(this);
 	}
 
-	public void update(float temp, float humidity, float pressure) {
-                lastPressure = currentPressure;
-		currentPressure = pressure;
+	public void update(Observable obs, Object arg) {
+		if(obs instanceof WeatherData) {
+			WeatherData weatherData = (WeatherData)obs;
+			lastPressure = currentPressure;
+			currentPressure = weatherData.getPressure();
+			display();
 
-		display();
+
+		}
 	}
 
 	public void display() {

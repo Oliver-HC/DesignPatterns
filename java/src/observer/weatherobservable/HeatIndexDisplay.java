@@ -15,11 +15,9 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
     public void update(Observable obs, Object arg) {
         if(obs instanceof WeatherData) {
             WeatherData weatherData = (WeatherData)obs;
-            this.t = weatherData.getTemperature();
-            this.rh = weatherData.getHumidity();
+            this.heatIndex = computeHeatIndex(weatherData.getTemperature(), weatherData.getHumidity());
+            display();
         }
-        this.heatIndex = computeHeatIndex(t, rh);
-        display();
     }
 
     private float computeHeatIndex(float t, float rh) {
