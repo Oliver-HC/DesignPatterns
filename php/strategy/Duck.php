@@ -5,8 +5,7 @@ abstract class Duck {
     protected $flyBehavior;
     protected $quackBehavior;
 
-    public function __construct() {
-    }
+    public function __construct() {}
 
     public abstract function display();
 

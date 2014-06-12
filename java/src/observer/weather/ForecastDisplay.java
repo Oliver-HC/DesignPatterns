@@ -3,7 +3,7 @@ package observer.weather;
 import java.util.*;
 
 public class ForecastDisplay implements Observer, DisplayElement {
-	private float currentPressure = 29.92f;  
+	private float currentPressure = 29.92f;
 	private float lastPressure;
 	private WeatherData weatherData;
 
@@ -13,9 +13,8 @@ public class ForecastDisplay implements Observer, DisplayElement {
 	}
 
 	public void update(float temp, float humidity, float pressure) {
-                lastPressure = currentPressure;
+		lastPressure = currentPressure;
 		currentPressure = pressure;
-
 		display();
 	}
 
