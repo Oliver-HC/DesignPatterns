@@ -11,7 +11,6 @@ class CurrentConditionsDisplay(Observer, DisplayElement):
     def update(self, temperature, humidity, pressure):
         self.temperature = temperature
         self.humidity = humidity
-        self.pressure = pressure
         self.display()
 
     def display(self):

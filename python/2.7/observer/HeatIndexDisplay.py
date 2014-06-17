@@ -5,7 +5,7 @@ class HeatIndexDisplay(Observer, DisplayElement):
     def __init__(self, weatherData):
         self.heatIndex = 0.0
         self.weatherData = weatherData
-        weatherData.registerObserver(self)
+        self.weatherData.registerObserver(self)
 
     def update(self, t, rh, pressure):
         self.heatIndex = self.computeHeatIndex(t, rh);

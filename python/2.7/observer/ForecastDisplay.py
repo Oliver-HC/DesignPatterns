@@ -6,7 +6,7 @@ class ForecastDisplay(Observer, DisplayElement):
         self.currentPressure = 29.92
         self.lastPressure = 0.0
         self.weatherData = weatherData
-        weatherData.registerObserver(self)
+        self.weatherData.registerObserver(self)
 
     def update(self, temp, humidity, pressure):
         self.lastPressure = self.currentPressure
