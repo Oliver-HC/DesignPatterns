@@ -1,9 +1,9 @@
 <?
 include_once("WeatherData.php");
-include_once("CurrentConditionsDisplay.php");
-include_once("ForecastDisplay.php");
-include_once("StatisticsDisplay.php");
 
+include_once("CurrentConditionsDisplay.php");
+include_once("StatisticsDisplay.php");
+include_once("ForecastDisplay.php");
 
 $weatherData = new WeatherData();
 $currentConditionsDispaly = new CurrentConditionsDispaly($weatherData);

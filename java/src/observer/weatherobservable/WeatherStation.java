@@ -1,5 +1,7 @@
 package observer.weatherobservable;
 
+import java.util.ArrayList;
+
 public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
