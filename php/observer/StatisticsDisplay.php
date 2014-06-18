@@ -34,7 +34,7 @@ class StatisticsDisplay implements Observer, DisplayElement {
     }
 
     public function display() {
-        echo "Avg/Max/Min temperature = $this->tempSum/$this->maxTemp/$this->minTemp";
+        echo ("Avg/Max/Min temperature = " . $this->tempSum . "/" . $this->maxTemp . "/" . $this->minTemp . "\n");
     }
 }
 ?>

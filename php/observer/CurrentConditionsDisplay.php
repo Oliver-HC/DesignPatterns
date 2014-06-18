@@ -20,7 +20,7 @@ class CurrentConditionsDispaly implements Observer, DisplayElement {
     }
 
     public function display() {
-        echo "current conditions $this->temperature degrees and $this->humidity% humidity\n";
+        echo ("current conditions " . $this->temperature . " degrees and " . $this->humidity . " humidity\n");
     }
 }
 ?>
