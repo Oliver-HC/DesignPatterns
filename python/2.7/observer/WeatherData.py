@@ -1,4 +1,4 @@
-from Subject import *;
+from Subject import *
 
 class WeatherData(Subject):
     def __init__(self):

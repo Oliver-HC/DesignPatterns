@@ -1,7 +1,7 @@
-from FlyRocketPowered import *
+from FlyBehavior import *
+from QuackBehavior import *
 
-from MallardDuck import *
-from ModelDuck import *
+from Duck import *
 
 mallard = MallardDuck()
 mallard.performFly()
