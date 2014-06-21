@@ -1,6 +1,6 @@
 package factory;
 
-public class PizzaTestDrive {
+public class main {
  
 	public static void main(String[] args) {
 		PizzaStore nyStore = new NYPizzaStore();
